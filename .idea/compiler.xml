@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Eureka" />
+        <module name="Microservice2" />
+        <module name="GateWay" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Microservice1 (1)" target="17" />
+      <module name="Microservice1 (2)" target="17" />
+      <module name="testCloud" target="1.5" />
+      <module name="testCloud (1)" target="17" />
+      <module name="testCloud (2)" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Eureka" options="-parameters" />
+      <module name="GateWay" options="-parameters" />
+      <module name="Microservice1" options="-parameters" />
+      <module name="Microservice1 (1)" options="-parameters" />
+      <module name="Microservice1 (2)" options="-parameters" />
+      <module name="Microservice2" options="-parameters" />
+      <module name="testCloud (1)" options="-parameters" />
+      <module name="testCloud (2)" options="-parameters" />
+    </option>
+  </component>
+</project>

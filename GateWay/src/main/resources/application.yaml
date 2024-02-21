@@ -1,0 +1,16 @@
+server:
+  port: 8765
+spring:
+  application:
+      name: GateWay
+  cloud:
+    gateway:
+      routes:
+        - id: MicroService1
+          uri: http://localhost:8081/
+          predicates:
+            - Path=/managers/**
+        - id: MicroService2
+          uri: http://localhost:8082/
+          predicates:
+            - Path=/clients/**

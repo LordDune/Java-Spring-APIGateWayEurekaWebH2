@@ -1,0 +1,12 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: MicroService2
+SQL:
+  findAll: SELECT * FROM managers
+  save: INSERT INTO managers (firstname, lastname) VALUES (?, ?)
+  deleteById: DELETE FROM managers WHERE id=?
+  update: UPDATE managers SET firstName = ?, lastName = ? WHERE id = ?
+  getUser: SELECT * FROM managers WHERE id=
